@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Rajdhani', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+  }
+}
+
+.font-mono-hud {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.font-display {
+  font-family: 'Teko', sans-serif;
+}
+
+/* Tactical HUD scanlines and glow */
+.hud-glow {
+  text-shadow: 0 0 8px rgba(74, 222, 128, 0.7), 0 0 15px rgba(74, 222, 128, 0.4);
+}
+
+.hud-glow-amber {
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.7), 0 0 15px rgba(251, 191, 36, 0.4);
+}
+
+.hud-glow-red {
+  text-shadow: 0 0 8px rgba(239, 68, 68, 0.8), 0 0 16px rgba(239, 68, 68, 0.5);
+}
+
+.hud-box-glow {
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.35), inset 0 0 12px rgba(34, 197, 94, 0.15);
+}
+
+.hud-box-lock {
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.6), inset 0 0 8px rgba(239, 68, 68, 0.3);
+}
+
+/* Radar scan sweep */
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-radar-sweep {
+  animation: radar-sweep 2.8s linear infinite;
+}

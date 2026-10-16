@@ -1,0 +1,6 @@
+{
+  "name": "Sky Warrior: Flight Combat",
+  "description": "An action-packed 3D military flight combat simulator built with Three.js featuring responsive aerodynamics, dogfighting AI, lock-on missiles, Vulcan cannon, and cinematic missions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
